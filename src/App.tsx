@@ -151,8 +151,18 @@ justify-content: center
       "alexcgaiser@gmail.com",
       "linkedin.com/in/alexander-gaiser/",
       "github.com/AlexGaiser",
+      "Yell if you see me on the street"
     ]}
   />,
+  <Slide
+  styles={[css`
+  justify-content: center
+`]}
+  title="Thank You"
+  subtitle={''}
+  bullets={[
+  ]}
+/>,
   ];
 
   return (
