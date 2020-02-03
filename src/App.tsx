@@ -6,6 +6,7 @@ import { css } from "@emotion/core";
 import headache from './assets/meme_headache.jpg'
 import evan from './assets/evangelist_ts.png'
 import post from './assets/post_ts.png'
+import buzz from './assets/buzz.jpeg'
 import backgroundTs from './assets/background_ts.png'
 import "./App.css";
 import Slide from "./components/Slide";
@@ -15,7 +16,7 @@ import Meme from "./components/Meme";
 
 
 const App = () => {
-  const [index, setIndex] = useState<number>(3);
+  const [index, setIndex] = useState<number>(0);
 
   const setSlide = (i: number, slides: JSX.Element[]): void => {
     setIndex(i % slides.length);
@@ -39,8 +40,11 @@ const App = () => {
     />,
 
     <Slide
+    styles={[css`
+    justify-content: center
+  `]}
       title="TypeScript for Fun and Profit"
-      subtitle="Welcome Future Typescript Afficionados"
+      subtitle="Welcome Future TypeScript Afficionados"
     />,
     <Slide
       title="What is TypeScript?"
@@ -48,18 +52,20 @@ const App = () => {
       bullets={
         [
           "TypeScript is a superset of JavaScript developed and maintained by Microsoft",
-          "It gives static typing to Javascript",
+          "It gives static typing to JavaScript",
           "It transcompiles into JavaScript at runtime",
-          "It was specifically developed to combat deficiencies in Javascript at scale",
+          "It was specifically developed to combat deficiencies in JavaScript at scale",
         ]
       }
     />,
+    <Meme image={headache} />,
+
     <Slide
     title="Why you should use TypeScript"
     subtitle=""
     bullets={
       [
-        "Typescript will give you precompile errors, saving you time",
+        "TypeScript will give you precompile errors, saving you time",
         "It gives you better code-completion if you are using VSCode",
         "It gives you more information on every object in your code",
         "It forces you to plan ahead, saving you a lot of time in the long run",
@@ -72,17 +78,24 @@ const App = () => {
   subtitle=""
   bullets={
     [
-      "If you are only familiar with dynamically typed languages, it teaches you a lot of fundamental concepts",
+      "It makes you more employable",
+      "46% pf NPM users state that they are already using TypeScript",
+      "If you are only familiar with dynamically typed languages, it teaches you a lot of essential concepts",
       "Everyone is using it, a lot of companies are update their code-base to use it",
       "Many emerging technologies are using it",
       "IT'S FUN!"
-
     ]
   }
 />,
-    <Meme image={post} />,
+<Slide
+styles={[css`
+justify-content: center
+`]}
 
-    <Meme image={headache} />,
+    title="Here's an example: "
+    subtitle=""
+   
+  />,
     <Slide
     title="How Can you use TypeScript?"
     subtitle="(It's Really easy.)"
@@ -93,6 +106,30 @@ const App = () => {
       ]
     }
   />,
+  <Slide
+styles={[css`
+justify-content: center
+`]}
+
+    title="Here's another example: "
+    subtitle=""
+   
+  />,
+  <Slide
+  title="Why you shouldn't use TypeScript"
+  subtitle=""
+  bullets={
+    [
+      "It makes JavaScript more Object-Oriented",
+      "It is slower to write",
+      "I have to train new people to use it or I have to learn it myself",
+      "It is one more dependency to maintain",
+      "TypeScript is still JavaScript",
+      "TypeScript is NOT JavaScript"
+    ]
+  }
+/>,
+  <Meme image={buzz} />,
     <Slide
       styles={[css`
         justify-content: center
@@ -100,11 +137,23 @@ const App = () => {
       title="Who REALLY Uses TypeScrpt?"
       subtitle="(Everybody)"
       bullets={[
-        "2325 companies reportedly use TypeScript in their tech stacks, including medium.com, Slack, and N26",
+        "46% of NPM users are already using TypeScript",
+        "2325 companies report using TypeScript in their projects, including medium.com, Slack, and N26",
         "Everyone who uses Angular",
-        "People Writing WebAssebly",
+        "People Writing WebAssebly using AssemblyScript",
+        "People writing Smart Contracts using Solidity"
       ]}
     />,
+    <Slide
+    title="Questions?"
+    subtitle={''}
+    bullets={[
+      "alexcgaiser@gmail.com",
+      "linkedin.com/in/alexander-gaiser/",
+      "github.com/AlexGaiser",
+      "Say my name backwards 3 times on a full moon and I will appear",
+    ]}
+  />,
   ];
 
   return (
