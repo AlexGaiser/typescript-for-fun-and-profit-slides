@@ -81,7 +81,7 @@ const App = () => {
       "It makes you more employable",
       "46% pf NPM users state that they are already using TypeScript",
       "If you are only familiar with dynamically typed languages, it teaches you a lot of essential concepts",
-      "Everyone is using it, a lot of companies are update their code-base to use it",
+      "Everyone is using it, a lot of companies are updating their code-base to use it",
       "Many emerging technologies are using it",
       "IT'S FUN!"
     ]
