@@ -13,6 +13,8 @@ The purpose of this talk is to explain to new web developers why TypeScript is a
 
 [https://www.meetup.com/NYC-Bootcampers-Anonymous/events/267886786/](**Meetup%20For%20this%20talk:**%20%20%20%20https://www.meetup.com/NYC-Bootcampers-Anonymous/events/267886786/)
 
+#### Link to Deployed Site
+[typescript-for-fun-and-profit.now.sh](https://typescript-for-fun-and-profit.now.sh/)
  -Credit to Scott Wlaschin for the title
 
 
