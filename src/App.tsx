@@ -151,7 +151,6 @@ justify-content: center
       "alexcgaiser@gmail.com",
       "linkedin.com/in/alexander-gaiser/",
       "github.com/AlexGaiser",
-      "Say my name backwards 3 times on a full moon and I will appear",
     ]}
   />,
   ];
